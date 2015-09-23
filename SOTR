@@ -24,3 +24,29 @@ Dado un proceso que es planificado para ejecución, el gestor asigna la memoria 
 DESPACHADOR:
 Tiene la función de iniciar la ejecución de un proceso.
 
+Puede existir un nivel más de prioridad asignado a los procesos que se ejcutan en segundo plano, que no tienen un plazo
+límite de terminación; estos procesos son planificados para su ejecución cuando el procesador no se encuentra ocupado.
+
+Los procesos periódicos son procesos que deben ejecutarse a intervalos de tiempo predefinidos. En la mayoría de los
+sistema en tiempo real, habrá varios tipos de procesos periódicos, éstos tendrán diferentes periodos, tiempos de ejecución
+y plazos de tiempo. El RTOS ordena la ejecución de los procesos periódicos para que todos ellos puedan cumplir sus plazos
+de tiempo.
+
+En cualquier momento pueden existir varios procesos, con diferentes prioridades, que podrían ejecutarse. El planificador
+del proceso implementa las políticas de planificación del sistema que determinan el orden de la ejecución de los procesos.
+Hay dos estrategias fundamentales de planificación:
+
+1.- Planificación sin reemplazo:
+    Una vez que un proceso ha sido planificado para su ejecucion, se ejcuta hasta el final o hasta que se bloquee por
+    alguna razón, tal como la espera de una entrada. 
+
+2.- Planificación con reemplazo:
+    La ejecución de un proceso se puede detener si un proceso de prioridad más alta requiere el usp del procesador.El
+    proceso de prioridad más alta reemplaz la ejecución del prioridad más baja y se le asigna el procesador.
+
+
+
+
+
+FUENTES:
+* Sommerville, Ian "Ingeniería del Softwae" Pearson Educación, 2005, páginas: 315 - 318
