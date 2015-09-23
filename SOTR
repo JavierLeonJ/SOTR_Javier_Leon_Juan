@@ -1,2 +1,26 @@
 Sitemas Operativos en Tiempo Real
-Hola
+
+Un sistema operativo en tiempo real gestiona los procesos y asignación de recursos en un sistema de tiempo real.Ejecuta
+y detiene los procesos para que los estímulos puedan ser manejados y asigna memoria y recursos del procesador. Hay muchos
+productos RTOS (Real Time Operatve System) disponibles, desde sistemas sencillos muy pequeños para dispositivos de consumo,
+hasta sistemas complejos para teléfonos y dispositivos móviles, y sistema operativos específicamente diseñados para
+control de procesos y telecomunicaciones.
+
+Los componentes de un RTOS dependen del tamaño y complejidad del sistema en tiempo real que se esté desarrollando.
+Normalmente todos incluyen:
+
+RELOJ DE TIEMPO REAL: 
+Proporciona información para planificar los proceses de forma periódica.
+
+MANEJADOR DE INTERRUPCIONES:
+Gestiona las solicitudes aperiódicas de los servicios.
+
+PLANIFICADOR:
+Se encarga de examinar los procesos que pueden ser ejecutados y elegir uno de ellos para su ejecución.
+
+GESTOR DE RECURSOS:
+Dado un proceso que es planificado para ejecución, el gestor asigna la memoria adecuada y los recursos del procesador.
+
+DESPACHADOR:
+Tiene la función de iniciar la ejecución de un proceso.
+
