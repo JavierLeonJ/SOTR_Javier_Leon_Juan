@@ -1,10 +1,19 @@
 Sitemas Operativos en Tiempo Real
 
-Un sistema operativo en tiempo real gestiona los procesos y asignación de recursos en un sistema de tiempo real.Ejecuta
-y detiene los procesos para que los estímulos puedan ser manejados y asigna memoria y recursos del procesador. Hay muchos
-productos RTOS (Real Time Operatve System) disponibles, desde sistemas sencillos muy pequeños para dispositivos de consumo,
-hasta sistemas complejos para teléfonos y dispositivos móviles, y sistema operativos específicamente diseñados para
-control de procesos y telecomunicaciones.
+Es un programa que controlar hardware del sistema y sirve de intermediario entra la máquina y el usuario. Lo que hace que sea
+tiempo real es la capacidad de responder a estímulos generados externamente dentro de un plazo determinado y finito.
+Todo sistema operativo de tiempo real debe ser determinista, es decir, debe garantizar que las aplicaiones que este controle
+se ejecuten dentro de una restricción de tiempo específico.
+
+Un sistema operativo en tiempo real gestiona los procesos y asignación de recursos en un sistema. Ejecuta y detiene los 
+procesos para que los estímulos puedan ser manejados y asigna memoria y recursos del procesador. Hay muchos productos RTOS 
+(Real Time Operatve System) disponibles, desde sistemas sencillos muy pequeños para dispositivos de consumo, hasta sistemas 
+complejos para teléfonos y dispositivos móviles, y sistema operativos específicamente diseñados para control de procesos y 
+telecomunicaciones.
+
+Un proceso es la unidad de trabajo en la mayoría de los sistemas operativos y se caracteriza por tener información como: el
+código del programa, el 'contador del programa' queindica la siguiente instrucción a ejecutar, una 'pila' que contiene datos
+temporales como las direcciones de regreso, las variables temporales de datos y los parámetros del proceso.
 
 Los componentes de un RTOS dependen del tamaño y complejidad del sistema en tiempo real que se esté desarrollando.
 Normalmente todos incluyen:
@@ -50,3 +59,5 @@ Hay dos estrategias fundamentales de planificación:
 
 FUENTES:
 * Sommerville, Ian "Ingeniería del Softwae" Pearson Educación, 2005, páginas: 315 - 318
+* Gómez, Miranda "Tésis: Kernel de Tiempo Real para el Control de Procesos" México, 2004
+  http://delta.cs.cinvestav.mx/~pmalvarez/tesis-omiranda.pdf
